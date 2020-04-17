@@ -1,0 +1,9 @@
+.title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+}

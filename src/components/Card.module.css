@@ -1,0 +1,82 @@
+.root {
+  margin: 1rem 0.25em;
+  border-radius: 2px;
+  /* Evite que l'image déborde et masque l'arrondi */
+  overflow: hidden;
+  background: white;
+
+  /* Source: https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.root:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  padding: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.cover {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.category {
+  font-style: italic;
+  text-align: left;
+}
+
+.likeWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.root button {
+  border: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.root button:hover {
+  cursor: pointer;
+}
+
+.likeWrapper button {
+  display: flex;
+  background: none;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.likeWrapper button svg {
+  margin-right: 1rem;
+  padding-bottom: 0.5em;
+}
+
+.isLiked svg,
+.isDisliked svg {
+  color: #26c6da;
+}
